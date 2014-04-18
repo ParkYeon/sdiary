@@ -1,4 +1,5 @@
-// MongoDB를 쓰기 위한 requirevar mongodb = require('mongodb');
+// MongoDB를 쓰기 위한 require
+var mongodb = require('mongodb');
 // 접속서버 세팅. auto_reconnect가 들어있는 3번째 파라메터는 옵션 모음
 var mongodb_server = new mongodb.Server('ds029950.mongolab.com', 29950, {auto_reconnect: true});
 // DB 세팅
