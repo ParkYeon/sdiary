@@ -8,7 +8,7 @@
 */
 
 
-var mongodb = require('mongodb');
+var mongodb = require('mongodb').MongoClient;
 
 
 // Create seed data
@@ -42,7 +42,7 @@ var seedData = [
 var uri = 'mongodb://test_app:test_pass@ds029950.mongolab.com:29950/sdiary';
 
 
-mongodb.MongoClient.connect(uri, function(err, db) {
+mongodb.connect(uri, function(err, db) {
   
   if(err) throw err;
   
